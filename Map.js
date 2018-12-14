@@ -104,7 +104,7 @@ class Map extends Component {
 
   async getCsrf() {
     try {
-      let response = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/csrf', {
+      let response = await fetch('...API...', {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -144,7 +144,7 @@ class Map extends Component {
           username : this.state.results.data.username,
           api_token : this.state.results.data.api_token
         });
-        let response = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/home?u='+ this.state.username, {
+        let response = await fetch('...API...'+ this.state.username, {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
@@ -199,7 +199,7 @@ class Map extends Component {
           username : this.state.results.data.username,
           api_token : this.state.results.data.api_token
         });
-        let response_office = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/hcm/getlatitude?u='+ this.state.username, {
+        let response_office = await fetch('...API...'+ this.state.username, {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
@@ -253,7 +253,7 @@ class Map extends Component {
           username : this.state.results.data.username,
           api_token : this.state.results.data.api_token
         });
-        let response_status = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/hcm/statusattendance?u='+this.state.username+'&zona=WIB', {
+        let response_status = await fetch('...API...'+this.state.username+'&zona=WIB', {
           method: 'GET',
           headers: {
             'Accept': 'application/json',
@@ -284,7 +284,7 @@ class Map extends Component {
 
     if(check == true) {
       try {
-        let response_clockin = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/hcm/clockin', {
+        let response_clockin = await fetch('...API...', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -345,7 +345,7 @@ class Map extends Component {
       }
     } else if(check == false){
       try {
-        let response_clockin = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/hcm/clockin', {
+        let response_clockin = await fetch('...API...', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -411,7 +411,7 @@ class Map extends Component {
 
   PressClockout = async() => {
     try {
-      let response_clockout = await fetch('https://m.helpdesk-web.telkomsel.co.id/mservicedesk/api/v3/hcm/clockout', {
+      let response_clockout = await fetch('...API...', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
